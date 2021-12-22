@@ -2,7 +2,7 @@ import React from "react";
 import s from "./Filter.module.css";
 import PropTypes from "prop-types";
 
-const Filter = ({ value, changefilter }) => {
+const Filter = ({ value, onChange }) => {
   return (
     <>
       <label className={s.label}>
@@ -11,7 +11,7 @@ const Filter = ({ value, changefilter }) => {
           className={s.input}
           type="text"
           value={value}
-          onChange={changefilter}
+          onChange={onChange}
         />
       </label>
     </>
